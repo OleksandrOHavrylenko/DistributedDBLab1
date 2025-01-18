@@ -27,7 +27,7 @@ public class Main {
 
         logger.info("Test 1 Lost-Update with default Transaction Isolation level");
 //        logger.info("Test 1 Lost-Update with SERIALIZABLE Transaction Isolation level");
-        testDatabaseCounter(RUN_10_THREADS, () -> CounterTester.test1(UP_TO_10_000_COUNTER, SERIALIZABLE_ISOLATION_LEVEL));
+        testDatabaseCounter(RUN_10_THREADS, () -> CounterTester.test1(UP_TO_10_000_COUNTER, DEFAULT_ISOLATION_LEVEL));
 //        logger.info("Test 2 In-Place Update with default Transaction Isolation level");
 //        testDatabaseCounter(RUN_10_THREADS, () -> CounterTester.test2(UP_TO_10_000_COUNTER));
 //        logger.info("Test 3 Row-Level locking with default Transaction Isolation level");
